@@ -4,7 +4,7 @@ pragma solidity ^0.8.16;
 import {ERC20, ERC4626} from "solmate/mixins/ERC4626.sol";
 
 contract StakingPool is ERC4626 {
-    constructor(ERC20 _loto) ERC4626(_loto, "Staked LOTO", "stLOTO") {}
+    constructor(ERC20 _loto) ERC4626(_loto, "Staked LOTO", "xLOTO") {}
 
     uint256 private _totalStakedAmount;
 
